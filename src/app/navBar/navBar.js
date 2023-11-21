@@ -40,7 +40,7 @@ const navItems = [
     },
     {
         title: "Conatact Us",
-        href: "contact"
+        href: "contactUs"
     }
 ]
 
@@ -92,7 +92,8 @@ function DrawerAppBar(props) {
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
                 <AppBar component="nav" sx={{ color: 'black', bgcolor: 'white' }}>
-                    <Toolbar sx={{ marginLeft: { md: '10%' }, marginRight: { md: '10%' } }} >
+                    {/* Main screen */}
+                    <Toolbar sx={{ marginLeft: { md: '10%' }, marginRight: { md: '10%' }, display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }} >
                         {/* this section is for mobile view */}
                         <IconButton
                             // color="inherit"
@@ -103,7 +104,7 @@ function DrawerAppBar(props) {
                                 mr: 2,
                                 display: {
                                     xs: 'flex', // Apply these styles on extra small (mobile) screens
-                                    sm: 'none', // Hide on small screens and above
+                                    md: 'none', // Hide on small screens and above
                                 },
                                 width: '100%',
                                 flexDirection: 'row-reverse',
@@ -117,21 +118,22 @@ function DrawerAppBar(props) {
                         <Typography
                             variant="h6"
                             component="div"
-                            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                            sx={{ display: { xs: 'none', sm: 'block' } }}
                         >
                             <Image src={'/logo.png'} width={140} height={60} />
                         </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+                        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                             {navItems.map((item, index) => (
                                 <Button key={index} sx={{ color: 'black', fontFamily: "Inter", marginLeft: '16px', fontSize: '14px' }} >
                                     <Link href={item.href}>{item.title}</Link>
+
                                 </Button>
                             ))}
                         </Box>
                         <Button style={{
                             backgroundColor: '#FF35F7'
 
-                        }} sx={{ color: 'white', display: { xs: 'none', md: 'block' }, display: 'flex', justifyItem: 'center', alignItems: 'center' }}>
+                        }} sx={{ color: 'white', display: ['none', 'none', 'flex'], justifyItem: 'center', alignItems: 'center' }}>
                             Get a Quote <ArrowForwardIcon sx={{ marginLeft: '8px' }} />
                         </Button>
 
@@ -148,7 +150,7 @@ function DrawerAppBar(props) {
                             keepMounted: true, // Better open performance on mobile.
                         }}
                         sx={{
-                            display: { xs: 'block', sm: 'none' },
+                            display: { xs: 'block', md: 'none' },
                             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                         }}
                     >
@@ -157,7 +159,7 @@ function DrawerAppBar(props) {
                     </Drawer>
                 </nav>
 
-            </Box>
+            </Box >
         </>
     );
 }

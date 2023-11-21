@@ -10,7 +10,7 @@ import Brand from '../homeComponents/brand';
 import GigWork from '../homeComponents/gigWork';
 import BecomePartner from '../homeComponents/becomePartner';
 import FrequentQuestions from '../homeComponents/frequentQuestion';
-
+import pen from '../../../public/pen.png'
 
 function Home2() {
 
@@ -30,7 +30,9 @@ function Home2() {
                 width: '100%',
                 height: '100vh',
                 position: 'relative',
-                paddingTop: { xs: '15%', md: '5%' }
+                paddingTop: { xs: '15%', md: '5%' },
+                overflow: 'hidden'
+
 
             }}>
                 <Box sx={{
@@ -70,7 +72,17 @@ function Home2() {
                     transform: 'translateX(-50%)',
                     display: { xs: 'block', md: 'block' }
                 }}>
-                    <Image src={'/pen.png'} width={imageWidth} height={imageHeight} alt='pen' />
+                    <Image
+                        src={pen}
+                        width={imageWidth}
+                        height={imageHeight}
+
+                        alt='pen2'
+
+
+                    />
+
+
 
                 </Box>
             </Box>
