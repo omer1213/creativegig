@@ -45,7 +45,7 @@ function Home2() {
                     alignItems: 'center',
                     marginTop: '2%'
                 }} >
-                    <Typography sx={{ fontFamily: "Inter", fontWeight: '900', lineHeight: { sm: '55.36px', xl: '120px' }, fontSize: { xs: '30px', sm: '45px', xl: '110px' }, textAlign: 'center' }}>
+                    <Typography sx={{ fontFamily: "Inter", fontWeight: '900', lineHeight: { sm: '55.36px', xl: '100px' }, fontSize: { xs: '30px', sm: '45px', xl: '110px' }, textAlign: 'center' }}>
                         Experience flawless custom <br /> designs, consistently delivered.
                     </Typography>
                     <Typography sx={{
