@@ -45,11 +45,11 @@ function Home2() {
                     alignItems: 'center',
                     marginTop: '2%'
                 }} >
-                    <Typography sx={{ fontFamily: "Inter", fontWeight: '900', lineHeight: { sm: '55.36px', xl: '100px' }, fontSize: { xs: '30px', sm: '45px', xl: '110px' }, textAlign: 'center' }}>
+                    <Typography sx={{ fontFamily: "Inter", fontWeight: '900', lineHeight: { sm: '55.36px', xl: '100px' }, fontSize: { xs: '30px', sm: '45px', xl: '80px' }, textAlign: 'center' }}>
                         Experience flawless custom <br /> designs, consistently delivered.
                     </Typography>
                     <Typography sx={{
-                        fontFamily: "Inter", fontWeight: '400', fontSize: { xs: '18px', xl: '60px' }, lineHeight: '42.36px', paddingTop: '1%'
+                        fontFamily: "Inter", fontWeight: '400', fontSize: { xs: '18px', xl: '36px' }, lineHeight: '42.36px', paddingTop: '1%'
                     }}>
                         With the world's #1 custom design marketplace
                     </Typography>
