@@ -34,7 +34,9 @@ function Home2() {
                 overflow: 'hidden'
 
 
-            }}>
+            }}
+                className="max-md:hidden"
+            >
                 <Box sx={{
                     color: 'white',
                     display: 'flex',
@@ -85,6 +87,58 @@ function Home2() {
 
 
                 </Box>
+            </Box>
+            {/* mobile view */}
+      
+            <Box
+                sx={{
+                    color: 'white',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    color: '#300390',
+                    marginTop: '14vh',
+                    // minHeight: 'vh',  // Ensure the Box takes at least the full viewport height
+                    textAlign: 'center', // Ensure text is centered
+                }}
+                className="block md:hidden"
+            >
+                <Typography
+                    sx={{
+                        fontFamily: "Inter",
+                        fontWeight: '900',
+                        lineHeight: { sm: '55.36px', xl: '120px' },
+                        fontSize: { xs: '30px', sm: '45px', xl: '110px' },
+                        textAlign: 'center',
+                    }}
+                >
+                    Experience flawless custom <br /> designs, consistently delivered.
+                </Typography>
+                <Typography
+                    sx={{
+                        fontFamily: "Inter",
+                        fontWeight: '400',
+                        fontSize: { xs: '18px', xl: '60px' },
+                        lineHeight: '42.36px',
+                        paddingTop: '1%',
+                        textAlign: 'center',
+                    }}
+                >
+                    With the world's #1 custom design marketplace
+                </Typography>
+                <Button
+                    style={{ backgroundColor: '#FF35F7' }}
+                    sx={{
+                        color: 'white',
+                        marginTop: '2%',
+                        fontSize: { xl: '20px' },
+                        padding: '10px',
+                        textAlign: 'center',
+                    }}
+                >
+                    Get Started Now
+                </Button>
             </Box>
             <Box sx={{
                 display: 'flex',

@@ -9,7 +9,7 @@ function BecomePartner() {
     return (
         <>
 
-            <Box className='mb-10  md:p-4 md:pb-1 sm:mx-0 md:mx-32 lg:mx-55 ' bgcolor={'#673DE6'} sx={{
+            <Box className='mb-10 m-4  md:p-4 md:pb-1 sm:mx-0 md:mx-32 lg:mx-55 ' bgcolor={'#673DE6'} sx={{
                 border: '1px solid #673DE6', borderRadius: '9px', display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
                 alignItems: 'center',
@@ -42,7 +42,7 @@ function BecomePartner() {
                         online presence as effective and engaging as possible.
                     </Typography>
                 </Box>
-                <Box className='md:pl-8 md:ml-4' sx={{ width: '30%' }}>
+                <Box className='md:pl-8 md:ml-4' sx={{ width: '40%' }}>
                     <Button style={buttonStyle} className='  xl:p-3' sx={{ borderRadius: '100px', marginTop: { xs: '6%', md: '0%' }, marginBottom: { xs: '5%', md: '0%' }, }}>
                         Become Our Partner
                     </Button>

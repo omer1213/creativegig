@@ -5,10 +5,10 @@ import React from 'react'
 function GigWork() {
     return (
         <>
-            <Typography sx={{ color: '#300390', fontFamily: 'Inter', fontWeight: '700', fontSize: '45px', textAlign: 'center', lineHeight: '54px', marginBottom: '2%' }}>
-                How does Creativ Gig work?
+            <Typography sx={{ color: '#300390', fontFamily: 'Inter', fontWeight: '700', fontSize: '40px', textAlign: 'center', lineHeight: '54px', marginBottom: '2%',padding:"15px" }}>
+                How does Creative Gig work?
             </Typography>
-            <Box width={'100%'} my={'3%'} sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
+            <Box width={'100%'} my={'3%'} sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, padding:'15px' }}>
                 <Box sx={{
                     width: { xs: '100%', md: '40%' }, marginLeft: { sm: '0%',md:'5%' ,xl: '17%' }, marginTop: { xs: '5%', md: '0%' }, display: 'flex',
                     flexDirection: 'column', // Stack on xs devices

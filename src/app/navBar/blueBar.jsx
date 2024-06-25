@@ -10,6 +10,7 @@ function BlueBar() {
                 height: 'auto', // Set a specific height
 
             }}
+            className="relative"
 
         >
             <Typography>
